@@ -1,0 +1,284 @@
+.contact-section {
+  padding: 85px 7% 35px;
+  background: #f4f9fd;
+  color: #203f59;
+  text-align: center;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contact-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #63809a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+}
+
+.contact-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #668fff;
+  box-shadow: 0 0 10px #668fff70;
+}
+
+.contact-container h2 {
+  margin: 18px 0;
+  font-size: clamp(43px, 6vw, 68px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.8px;
+}
+
+.contact-container h2 span {
+  color: #6589ed;
+}
+
+.contact-description {
+  max-width: 520px;
+  margin: 0 auto;
+  color: #71869a;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 13px 23px;
+  border-radius: 8px;
+  background: #203f59;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contact-button:hover {
+  background: #345e80;
+  transform: translateY(-3px);
+}
+
+.contact-button span,
+.contact-socials span {
+  font-size: 16px;
+}
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin-top: 25px;
+}
+
+.contact-socials a {
+  color: #506d87;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-socials a:hover {
+  color: #6589ed;
+}
+
+.contact-bottom {
+  width: 100%;
+  margin-top: 65px;
+}
+
+.contact-bottom span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #4f8cff,
+    #9b5de5,
+    transparent
+  );
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 65px 20px 25px;
+  }
+
+  .contact-container h2 {
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+
+  .contact-description {
+    font-size: 13px;
+  }
+
+  .contact-socials {
+    gap: 22px;
+  }
+
+  .contact-bottom {
+    margin-top: 45px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-button,
+  .contact-socials a {
+    transition: none;
+  }
+}
+
+.contact-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-bg-art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-orb {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.42;
+}
+
+.orb-one {
+  top: 5%;
+  left: -100px;
+  background: radial-gradient(
+    circle, #c9ddff 0%, #e8f1ff 55%, transparent 72%
+  );
+}
+
+.orb-two {
+  right: -90px;
+  bottom: 0;
+  background: radial-gradient(
+    circle, #e2d4ff 0%, #f0eaff 55%, transparent 72%
+  );
+}
+
+.bg-star {
+  position: absolute;
+  color: #829cf0;
+  opacity: 0.65;
+  animation: bgFloat 5s ease-in-out infinite;
+}
+
+.bg-star-one {
+  top: 18%;
+  left: 14%;
+  font-size: 27px;
+}
+
+.bg-star-two {
+  top: 28%;
+  right: 13%;
+  font-size: 36px;
+  color: #a18ae9;
+  animation-delay: -2s;
+}
+
+.bg-star-three {
+  bottom: 19%;
+  left: 22%;
+  font-size: 23px;
+  color: #9b8af5;
+  animation-delay: -1s;
+}
+
+.bg-star-four {
+  right: 23%;
+  bottom: 13%;
+  font-size: 18px;
+  animation-delay: -3s;
+}
+
+.bg-ring {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border: 1.5px solid #9bb8f5;
+  border-radius: 50%;
+  opacity: 0.45;
+}
+
+.ring-one {
+  top: 15%;
+  right: 27%;
+}
+
+.ring-two {
+  bottom: 17%;
+  left: 8%;
+  width: 35px;
+  height: 35px;
+  border-color: #b5a0ee;
+}
+
+.bg-dots {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  opacity: 0.4;
+  background-image: radial-gradient(#819fe9 1.5px, transparent 1.5px);
+  background-size: 12px 12px;
+}
+
+.dots-one {
+  top: 12%;
+  right: 7%;
+}
+
+.dots-two {
+  bottom: 10%;
+  left: 34%;
+}
+
+@keyframes bgFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(8deg); }
+}
+
+@media (max-width: 600px) {
+  .bg-star-one { left: 5%; }
+  .bg-star-two { right: 4%; }
+  .ring-one { right: 8%; }
+  .dots-two { left: 10%; }
+  .bg-orb { width: 160px; height: 160px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-star { animation: none; }
+}
