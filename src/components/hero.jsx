@@ -46,8 +46,8 @@ const Hero = () => {
             </a>
 
             <a
-              href="/Shivani-Kotwal-Resume.pdf"
-              download
+              href="/Shivani-Resume.pdf"
+              download ="Shivani-Resume.pdf"
               className="secondary-btn"
             >
               <span>Download Resume</span>
